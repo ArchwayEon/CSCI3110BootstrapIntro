@@ -1,0 +1,31 @@
+﻿@model Pet
+@{
+    ViewData["Title"] = "Modal Form Part 1 JavaScript";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="modal fade" id="createModalP1" tabindex="-1" 
+     role="dialog" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div id="mainContent" class="modal-content">
+         <form id="createPetFormP1" asp-action="Create">
+
+            <div class="modal-header">
+            </div>
+
+            <div class="modal-body">
+            </div>
+
+            <div class="modal-footer">
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/modalFormP1.js"></script>
+}
+
+

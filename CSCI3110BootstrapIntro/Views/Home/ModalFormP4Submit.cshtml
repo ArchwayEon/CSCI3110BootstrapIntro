@@ -1,0 +1,42 @@
+﻿@model Pet
+@{
+    ViewData["Title"] = "Modal Form P4 Submit";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<button type="button" class="btn btn-primary" id="btnCreatePet">
+    Create Pet
+</button>
+<div class="modal fade" id="createModalP4" tabindex="-1" role="dialog"
+     aria-labelledby="createPetModalTitle3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div id="mainContent" class="modal-content">
+            <form id="createPetFormFinal" asp-action="CreatePet">
+
+                <div class="modal-header">
+                    <h5 class="modalTitle" id="createPetModalTitle3">Create Pet</h5>
+                    <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <partial name="_PetFormHorizontal" model="@Model">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="reset" class="btn btn-secondary">Clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="~/js/modalFormSubmitDemo.js"></script>
+}

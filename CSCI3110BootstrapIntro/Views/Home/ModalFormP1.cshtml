@@ -1,0 +1,32 @@
+﻿@model Pet
+@{
+    ViewData["Title"] = "Pet Modal Form Part 1";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<button type="button" class="btn btn-primary" 
+        data-bs-toggle="modal" 
+        data-bs-target="#createModalP1">
+   Modal Start
+</button>
+<div class="modal fade" id="createModalP1" tabindex="-1" 
+     role="dialog" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div id="mainContent" class="modal-content">
+         <form id="createPetFormP1" asp-action="Create">
+
+            <div class="modal-header">
+            </div>
+
+            <div class="modal-body">
+            </div>
+
+            <div class="modal-footer">
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
+
+

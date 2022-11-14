@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "Popover Demo";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<button type="button" class="btn btn-lg btn-danger" 
+        data-bs-toggle="popover"
+        title="Popover title"
+        data-bs-content="And here's some amazing content. It's very engaging. Right?">
+   Click to toggle popover
+</button>
+
+<a tabindex="0" class="btn btn-lg btn-danger popover-dismiss" role="button"
+   data-bs-toggle="popover"
+   data-bs-trigger="focus" title="Dismissible popover"
+   data-bs-content="And here's some amazing content. It's very engaging. Right?">
+    Dismissible popover
+</a>
+
+<a tabindex="0" class="btn btn-lg btn-danger" role="button" id="popoverHoverBtn"
+   title="Hover popover"
+   data-bs-content="And here's some amazing content. It's very engaging. Right?">
+    Hover popover
+</a>
+
+@section Scripts{
+    <script src="~/js/popoverDemo.js"></script>
+}
+

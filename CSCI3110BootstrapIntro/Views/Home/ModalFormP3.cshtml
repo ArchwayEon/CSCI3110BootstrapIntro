@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "Modal Form Part 3";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<button type="button" class="btn btn-primary" 
+        data-bs-toggle="modal" data-bs-target="#createModalP3">
+   Modal with Footer
+</button>
+<div class="modal fade" id="createModalP3" tabindex="-1" role="dialog"
+     aria-labelledby="createPetModalTitle2" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div id="mainContent" class="modal-content">
+         <form id="createPetForm" asp-action="Create">
+
+            <div class="modal-header">
+               <h5 class="modalTitle" id="createPetModalTitle2">Create Pet</h5>
+               <button type="button" class="btn-close" 
+                       data-bs-dismiss="modal" aria-label="Close">
+               </button>
+            </div>
+
+            <div class="modal-body">
+            </div>
+
+            <div class="modal-footer">
+               <button type="submit" class="btn btn-primary" 
+                       data-bs-dismiss="modal">Save</button>
+               <button type="reset" class="btn btn-secondary">Clear</button>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
+
+

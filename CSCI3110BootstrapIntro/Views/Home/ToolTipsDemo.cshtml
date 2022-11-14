@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "ToolTips Demo";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<a href="#" data-bs-toggle="tooltip" 
+   data-bs-placement="top" title="Hooray!">Hover</a>
+<a href="#" data-bs-toggle="tooltip" 
+   data-bs-placement="bottom" title="Hooray!">Hover</a>
+<a href="#" data-bs-toggle="tooltip" 
+   data-bs-placement="left" title="Hooray!">Hover</a>
+<a href="#" data-bs-toggle="tooltip" 
+   data-bs-placement="right" title="Hooray!">Hover</a>
+
+@section Scripts{
+    <script src="~/js/toolTipDemo.js"></script>
+}
