@@ -18,6 +18,11 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult ContainerExample()
+    {
+        return View();
+    }
+
     public IActionResult GridExample()
     {
         return View();

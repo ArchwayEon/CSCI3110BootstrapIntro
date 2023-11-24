@@ -1,4 +1,4 @@
-﻿"using strict";
+﻿"use strict";
 
 (function _petModalDemo() {
     // If there are any error messages, clear them
