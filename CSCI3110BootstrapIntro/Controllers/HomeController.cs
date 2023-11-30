@@ -79,7 +79,7 @@ public class HomeController : Controller
         if (ModelState.IsValid)
         {
             // Save the pet data here
-            return Json("success");
+            return Json(new { message = "success", pet });
         }
         return Json("fail");
     }
